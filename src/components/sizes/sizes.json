@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sizes_sizes",
+  "info": {
+    "displayName": "Sizes",
+    "icon": "baby-carriage"
+  },
+  "options": {},
+  "attributes": {
+    "size_name": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "size_thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

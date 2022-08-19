@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_variants_variants",
+  "info": {
+    "displayName": "Variants",
+    "icon": "dice"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "float"
+    },
+    "sale_price": {
+      "type": "float"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colors.colors"
+    },
+    "size": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sizes.sizes"
+    }
+  }
+}

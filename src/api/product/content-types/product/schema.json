@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "product_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-category.product-category",
+      "inversedBy": "products"
+    },
+    "product_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-tag.product-tag",
+      "inversedBy": "products"
+    },
+    "charge_taxes": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "float"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "ratings": {
+      "type": "float"
+    },
+    "reviews": {
+      "type": "integer"
+    },
+    "sale_count": {
+      "type": "integer"
+    },
+    "is_hot": {
+      "type": "boolean"
+    },
+    "is_new": {
+      "type": "boolean"
+    },
+    "publication_date": {
+      "type": "date"
+    },
+    "large_pictures": {
+      "displayName": "large_pictures",
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery.large-pictures"
+    }
+  }
+}

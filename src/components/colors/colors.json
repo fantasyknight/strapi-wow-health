@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_colors_colors",
+  "info": {
+    "displayName": "Colors",
+    "icon": "smoking"
+  },
+  "options": {},
+  "attributes": {
+    "color_name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "color_thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
